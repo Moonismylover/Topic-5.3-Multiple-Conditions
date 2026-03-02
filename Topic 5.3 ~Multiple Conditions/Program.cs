@@ -20,7 +20,7 @@ namespace Topic_5._3__Multiple_Conditions
             && is the 'and' operator, which means that both conditions must be true for the whole statement to be true.
             */
 
-            Console.Write("Enter your age: "); 
+            Console.Write("Enter your age: ");
             age = Convert.ToInt32(Console.ReadLine());
 
             if (age >= 13 && age <= 19)
@@ -51,10 +51,10 @@ namespace Topic_5._3__Multiple_Conditions
 
                 if (workingStatus == "no")
                     Console.WriteLine("Awesome! Then I will see you tomorrow!");
-                else 
+                else
                     Console.WriteLine("Oh, that's too bad. Maybe we can go another time.");
             }
-            else 
+            else
                 Console.WriteLine("Oh, that's too bad. Maybe we can go another time.");
 
             // Task 2
@@ -67,12 +67,12 @@ namespace Topic_5._3__Multiple_Conditions
             guesses = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(" ");
             Console.Write("Enter the password: ");
-            password = Console.ReadLine();  
+            password = Console.ReadLine();
             Console.WriteLine(" ");
 
             if (guesses <= 5 && password == "santa")
                 Console.WriteLine("Open Sesame.");
-            else 
+            else
                 Console.WriteLine("Access Denied.");
 
             // Task 3
@@ -97,7 +97,7 @@ namespace Topic_5._3__Multiple_Conditions
                 Console.WriteLine("YUM! I love those that topping too!");
             else if (topping == "pineapple")
                 Console.WriteLine("Pineapple on pizza? That's a controversial choice!");
-            else 
+            else
                 Console.WriteLine("Oh, that's a nice topping! I like that one too!");
 
             // Task 4
@@ -111,8 +111,40 @@ namespace Topic_5._3__Multiple_Conditions
 
             if (age <= 60 || age <= 12)
                 Console.WriteLine("The bus fare for you is $2.00");
-            else 
+            else
                 Console.WriteLine("The bus fare for you is $3.50");
+
+            // Task 5
+
+            string animal;
+
+            Console.WriteLine(" ");
+            Console.Write("What is your favourite animal? \nEnter here: ");
+            animal = Console.ReadLine().ToLower();
+            Console.WriteLine(" ");
+
+            if (animal == "cat" || animal == "dog")
+                Console.WriteLine("Me too!");
+            else
+                Console.WriteLine("Each to their own, I guess!");
+
+            // Task 6
+
+            string weather;
+            int temp;
+
+            Console.WriteLine(" ");
+            Console.Write("What is the temperature outside? \nEnter here: ");
+            temp = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(" ");
+            Console.Write("What is the weather like outside? \nEnter here (sunny, cloudy): ");
+            weather = Console.ReadLine().ToLower();
+
+            if (temp > 25 || weather == "sunny")
+                Console.WriteLine("Swim time!");
+            else
+                Console.WriteLine("Nap time!");
+
 
         }
     }
